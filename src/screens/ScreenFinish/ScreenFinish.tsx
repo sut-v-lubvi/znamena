@@ -1,5 +1,5 @@
-import Finish from "@/components/Finish/Finish";
 import { connect } from "react-redux";
+import Finish from "../../components/Finish/Finish";
 
 export const ScreenFinish = () => {
   return <Finish />;
