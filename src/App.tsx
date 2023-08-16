@@ -6,15 +6,15 @@ import Layout from "./components/Layout/Layout";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <BrowserRouter>
         <Layout />
         <Routes>
-          <Route path="/tests" element={<ScreenTests />} />
+          <Route path="/test" element={<ScreenTests />} />
           <Route path="/finish" element={<ScreenFinish />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 export default App;

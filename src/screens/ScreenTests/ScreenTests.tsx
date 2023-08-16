@@ -1,8 +1,11 @@
-import Tests from "@/components/Tests/Tests";
 import { connect } from "react-redux";
+import Tests from "../../components/Tests/Tests";
 
-export const ScreenTests = () => {
+const ScreenTests = (props: any) => {
   return <Tests />;
 };
+const mapStateToProps = (state: any) => ({});
 
-export default connect()(ScreenTests);
+const mapDispatchToProps = {};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ScreenTests);

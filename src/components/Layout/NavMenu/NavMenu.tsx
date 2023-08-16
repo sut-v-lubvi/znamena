@@ -13,7 +13,7 @@ export default function NavMenu({ items, stateMenu }: NavProps) {
       <div className={style.container}>
         {items.map((e) => {
           return (
-            <div className={style.link_tests}>
+            <div key={e.id} className={style.link_tests}>
               <a href={e.src}>{e.title}</a>
             </div>
           );
