@@ -1,12 +1,18 @@
-import { DivTitle } from "../../common/components/Test/TestStyled";
-import { FinishContainer, FinishDiv, FinishDivTitle } from "./FinishStyled";
+import {
+  FinishContainer,
+  FinishDiv,
+  FinishDivTitle,
+  FinishS,
+} from "./FinishStyled";
 
 function Finish() {
   return (
     <FinishContainer>
-      <FinishDivTitle>Результат</FinishDivTitle>
-      <FinishDiv>Ошибок: 3</FinishDiv>
-      <FinishDiv>Время: 10:15</FinishDiv>
+      <FinishS>
+        <FinishDivTitle>Результат</FinishDivTitle>
+        <FinishDiv>Ошибок: 3</FinishDiv>
+        <FinishDiv>Время: 10:15</FinishDiv>
+      </FinishS>
     </FinishContainer>
   );
 }
