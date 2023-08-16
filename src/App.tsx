@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import ScreenTests from "./screens/ScreenTests/ScreenTests";
-import ScreenFinish from "./screens/ScreenFinish/ScreenFinish";
+
 import Layout from "./components/Layout/Layout";
+import { ScreenFinish } from "./screens/ScreenFinish/ScreenFinish";
 
 function App() {
   return (

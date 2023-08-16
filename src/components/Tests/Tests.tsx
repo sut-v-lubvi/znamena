@@ -1,6 +1,6 @@
 import Button from "../../common/components/ButtonTest/Button";
 import Test from "../../common/components/Test/Test";
-import { DivButton, DivContainerTests, DivTest } from "./TestStyled";
+import { DivButton, DivContainerTests, DivTest } from "./TestsStyled";
 
 function Tests() {
   return (
