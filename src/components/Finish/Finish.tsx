@@ -1,13 +1,9 @@
-<<<<<<< Updated upstream
 import {
   FinishContainer,
   FinishDiv,
   FinishDivTitle,
   FinishS,
 } from "./FinishStyled";
-=======
-import { FinishContainer, FinishDiv, FinishDivTitle } from "./FinishStyled";
->>>>>>> Stashed changes
 
 function Finish() {
   return (

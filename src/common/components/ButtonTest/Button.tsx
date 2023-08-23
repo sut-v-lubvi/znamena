@@ -1,10 +1,15 @@
 import { ButtonT } from "./ButtonStyled";
+import { ButtonProps } from "./ButtonType";
 
-function Button() {
+function Button({ prevQuestions, postQuestions }: ButtonProps) {
   return (
     <>
-      <ButtonT left>{"<"}</ButtonT>
-      <ButtonT right>{">"}</ButtonT>
+      <ButtonT onClick={prevQuestions} flag={true}>
+        {"<"}
+      </ButtonT>
+      <ButtonT onClick={postQuestions} flag={false}>
+        {">"}
+      </ButtonT>
     </>
   );
 }

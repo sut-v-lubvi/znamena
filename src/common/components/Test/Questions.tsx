@@ -1,3 +1,4 @@
+import { useForm } from "react-hook-form";
 import {
   DivImg,
   DivInput,
@@ -6,22 +7,37 @@ import {
   FormTest,
   InputT,
   Line,
-} from "./TestStyled";
+} from "./QuestionsStyled";
+import { QuestionProps } from "./QuestionsType";
 
-function Test() {
+type InputT = {
+  id: number;
+  answer: boolean;
+};
+
+function Questions({ currentQuestion }: QuestionProps) {
+  // const {register, handleSubmit} = useForm<InputT>()
   return (
     <>
       <DivQuestions>
         <DivImg></DivImg>
         <DivTitle>
-          <p>Как называется это знамя?</p>
+          <p>{currentQuestion.question}</p>
         </DivTitle>
         <Line></Line>
       </DivQuestions>
       <FormTest action="formdata" method="POST" name="form1">
-        <DivInput>
+        {currentQuestion.answers.map((e) => {
+          return (
+            <DivInput key={e.id}>
+              <InputT type="checkbox" />
+              {e.label}
+            </DivInput>
+          );
+        })}
+        {/* <DivInput>
           <InputT type="checkbox" />
-          Голубчик борзый
+          {currentQuestion.answers[0]}
         </DivInput>
         <DivInput>
           <InputT type="checkbox" />
@@ -34,10 +50,10 @@ function Test() {
         <DivInput>
           <InputT type="checkbox" />
           Кулизьма малая
-        </DivInput>
+        </DivInput> */}
       </FormTest>
     </>
   );
 }
 
-export default Test;
+export default Questions;
