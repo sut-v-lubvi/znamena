@@ -1,4 +1,4 @@
-import { BurgerButton } from "@/common/components/BurgerButton/BurgerButton";
+import { BurgerButton } from "../../../common/components/BurgerButton/BurgerButton";
 import style from "./Header.module.css";
 interface HeaderProps {
   setStateMenu: any;

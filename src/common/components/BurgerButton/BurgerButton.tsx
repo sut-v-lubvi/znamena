@@ -2,7 +2,7 @@ import style from "./BurgerButton.module.css";
 
 interface BurgerProps {
   setStateMenu: any;
-  stateMenu: boolean;
+  stateMenu: any;
 }
 
 export const BurgerButton = ({ setStateMenu, stateMenu }: BurgerProps) => {
@@ -10,7 +10,7 @@ export const BurgerButton = ({ setStateMenu, stateMenu }: BurgerProps) => {
     <div
       onClick={() => setStateMenu(!stateMenu)}
       className={
-        stateMenu ? [style.menu_btn, style.active].join(" ") : [style.menu_btn]
+        stateMenu ? [style.menu_btn, style.active].join(" ") : style.menu_btn
       }
     >
       <span></span>

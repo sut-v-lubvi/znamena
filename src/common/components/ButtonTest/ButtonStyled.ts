@@ -1,5 +1,6 @@
 import { styled, css } from "styled-components";
-export const ButtonT = styled.button`
+
+export const ButtonT = styled.button<{ left?: boolean; right?: boolean }>`
   &:active {
     transform: translateY(1.5px);
     box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.2);
@@ -12,7 +13,7 @@ export const ButtonT = styled.button`
   background-color: rgb(48, 48, 48);
   color: white;
 
-  ${(props) =>
+  ${(props: any) =>
     props.left &&
     css`
       border-bottom-left-radius: 20px;
@@ -20,7 +21,7 @@ export const ButtonT = styled.button`
       box-shadow: 1px 4px 6px 2px rgba(0, 0, 0, 0.2);
     `}
 
-  ${(props) =>
+  ${(props: any) =>
     props.right &&
     css`
       border-bottom-right-radius: 20px;

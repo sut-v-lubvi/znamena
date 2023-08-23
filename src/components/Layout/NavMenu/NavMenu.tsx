@@ -1,4 +1,4 @@
-import { ItemEl } from "@/screens/NavMenuContainer/NavMenuContainer";
+import { ItemEl } from "../../../screens/NavMenuContainer/NavMenuContainer";
 import style from "./NavMenu.module.css";
 interface NavProps {
   items: Array<ItemEl>;

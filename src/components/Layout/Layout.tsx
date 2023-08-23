@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "./Header/Header";
-import NavMenuContainer from "@/screens/NavMenuContainer/NavMenuContainer";
+import NavMenuContainer from "../../screens/NavMenuContainer/NavMenuContainer";
 
 function Layout() {
   const [stateMenu, setStateMenu] = useState(false);
