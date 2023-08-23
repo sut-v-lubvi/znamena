@@ -1,13 +1,19 @@
 import { styled } from "styled-components";
 export const FinishContainer = styled.div`
-  margin: 90px 20px 20px 20px;
-  /* width: 90vw; */
-  border-radius: 15px;
-  border: solid 2px rgb(128, 128, 128);
-
+  width: 100vw;
   height: 100vh;
   display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+`;
+export const FinishS = styled.div`
+  width: 90vw;
+  margin: 90px 0px 20px 0px;
+  border-radius: 15px;
+  border: solid 2px rgb(128, 128, 128);
+  display: flex;
   flex-direction: column;
+  z-index: 2;
 `;
 export const FinishDivTitle = styled.div`
   padding-top: 20px;
