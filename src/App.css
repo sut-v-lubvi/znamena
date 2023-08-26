@@ -1,4 +1,11 @@
+@font-face {
+  font-family: "znamenna";
+  src: url("../public/Kruk-Kalashn-edit-VG.ttf");
+}
 .App {
   width: 100vw;
   height: 100vh;
+}
+.red {
+  color: red;
 }
