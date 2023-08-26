@@ -16,13 +16,31 @@
 }
 .container {
   border-radius: 20px;
-  margin: 15px 15px 15px 15px;
-  border: solid 2px rgb(128, 128, 128);
+  margin: 30px 15px 30px 15px;
+  border: solid 2px rgb(48, 48, 48);
   width: 100vw;
   height: 88vh;
 }
 .link_tests {
-  font-size: 24px;
-  padding: 35px 0px 10px 30px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  font-size: 26px;
+  padding-top: 30px;
   text-align: start;
+}
+.icon {
+  text-align: center;
+  font-family: "znamenna";
+  font-size: 34px;
+}
+
+.link_tests a {
+  color: black;
+}
+.link_tests a:active {
+  transition: all 0.1s;
+  font-size: 24px;
 }

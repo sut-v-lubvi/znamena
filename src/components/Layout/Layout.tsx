@@ -7,7 +7,7 @@ function Layout() {
   return (
     <div>
       <Header stateMenu={stateMenu} setStateMenu={setStateMenu} />
-      <NavMenuContainer stateMenu={stateMenu} />
+      <NavMenuContainer stateMenu={stateMenu} setStateMenu={setStateMenu} />
     </div>
   );
 }

@@ -10,7 +10,7 @@ export const FinishS = styled.div`
   width: 90vw;
   margin: 90px 0px 20px 0px;
   border-radius: 15px;
-  border: solid 2px rgb(128, 128, 128);
+  border: solid 2px rgb(48, 48, 48);
   display: flex;
   flex-direction: column;
   z-index: 2;
