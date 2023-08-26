@@ -1,3 +1,4 @@
+import { FinishProps } from "../../screens/ScreenFinish/ScreenFinish";
 import {
   FinishContainer,
   FinishDiv,
@@ -5,13 +6,24 @@ import {
   FinishS,
 } from "./FinishStyled";
 
-function Finish() {
+function Finish({ result }: FinishProps) {
   return (
     <FinishContainer>
       <FinishS>
         <FinishDivTitle>Результат</FinishDivTitle>
-        <FinishDiv>Ошибок: 3</FinishDiv>
-        <FinishDiv>Время: 10:15</FinishDiv>
+        {result.length !== 0 ? (
+          result.map((e) => {
+            return (
+              <FinishDiv key={e.currentTestId}>
+                <FinishDiv>Тест: {e.currentTestId}</FinishDiv>
+                <FinishDiv>Правильных ответов: {e.numbCorrAnsver}</FinishDiv>
+                <FinishDiv>Ошибок: {e.numberError}</FinishDiv>
+              </FinishDiv>
+            );
+          })
+        ) : (
+          <div></div>
+        )}
       </FinishS>
     </FinishContainer>
   );

@@ -1,4 +1,4 @@
 export interface ButtonProps {
-  prevQuestions: () => any;
+  prevQuestions: () => void;
   postQuestions: () => void;
 }
