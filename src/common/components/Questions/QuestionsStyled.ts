@@ -45,18 +45,18 @@ export const InputT = styled.input`
 export const Line = styled.div`
   margin: 10px;
   margin-top: 20px;
-  height: 2px;
-  background-color: rgb(128, 128, 128);
+  height: 1px;
+  background-color: rgb(48, 48, 48);
 `;
 export const ButtonNew = styled.button<{ flag: string }>`
-  /* padding: 12px; */
+  color: black;
   align-self: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
   background-color: white;
   border: 2px solid rgb(48, 48, 48);
   border-radius: 10px;
   width: 90%;
-  height: 40px;
+  height: 47px;
   font-size: 16px;
   padding-left: 10px;
   text-align: start;
@@ -88,7 +88,7 @@ export const ButtonNext = styled.button`
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   background-color: rgb(48, 48, 48);
   width: 90%;
-  height: 40px;
+  height: 47px;
   font-size: 15px;
   border-radius: 10px;
 `;
